@@ -30,10 +30,10 @@ install(TARGETS touch_keyboard_handler
 	DESTINATION sbin)
 
 install(DIRECTORY layouts
-	DESTINATION ${CMAKE_INSTALL_SYSCONFDIR}/touch_keyboard)
+	DESTINATION etc/touch_keyboard)
 
 install(FILES layout-touchpad.csv touch-hw.csv
-	DESTINATION ${CMAKE_INSTALL_SYSCONFDIR}/touch_keyboard)
+	DESTINATION etc/touch_keyboard)
 
 install(FILES 60-touch-keyboard.rules
 	DESTINATION ${UDEV_DIR}/rules.d)
